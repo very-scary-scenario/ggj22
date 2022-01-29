@@ -7,6 +7,8 @@ Look out! It's <enemy>!
 Oh, it's <enemy>.
 Wow, a <enemy>!
 You encounter a <enemy>.
+Suddenly, <enemy>!
+<enemy> is here to kill you dead.
 
 #readying an attack by putting a word on-screen
 <enemy> prepares for attack!
@@ -15,6 +17,7 @@ Careful! <enemy> is preparing something big!
 <enemy> is up to something!
 <enemy> psyches themselves up!
 It looks like <enemy> is getting ready for something!
+Watch out, <enemy> is up to no good!
 
 #you typed the word
 You counter-attack with a deft sword-strike!
@@ -22,15 +25,21 @@ You parry the attack and land a sweet back-hander!
 You dodge the attack and return the favour!
 Your attack caught them off guard!
 You sneak up and attack while they're distracted!
+You score a critical hit!
+You nail them with a heavy axe-chop!
+You pierce them with a swift lance jab!
 
 #you didn't type the word
 <enemy> lands a hefty blow.
 <enemy> strikes you in a gnarly spot.
 <enemy> attacks you viciously. 
-<enemy> hit you where the sun doesn't shine.
-<enemy> hit you where it hurts.
+<enemy> hits you where the sun doesn't shine.
+<enemy> hits you where it hurts.
 <enemy> lands a devastating attack.
 <enemy> probably hit something vital.
+<enemy> got you good.
+<enemy> is doing you in.
+<enemy> is too strong and you take a heavy strike.
 
 #you killed the enemy by typing three words or something
 <enemy> was defeated!
@@ -39,6 +48,9 @@ You have slain <enemy>!
 You felled <enemy>!
 The evil is defeated!
 <enemy> is done for!
+<enemy> is outta there!
+You win the battle!
+KO! <enemy> is down and out!
 
 #one of these to follow killing an enemy as a kind of loot table that doesn't do anything
 You gain 5 XP!
@@ -51,6 +63,14 @@ You found a minor potion of healing!
 You found 3 Junk!
 You found 27 Gold!
 You found 7 Gil!
+You found 12 Zenny!
+You found 29 Bells!
+You found 1 whisk!
+You found the roaming duck!
+Your strength increases by 1!
+Your magic increases by 1!
+Your charisma increases by 1!
+Your credit score increases by 1!
 
 #you died actually
 You have taken mortal damage...
@@ -61,3 +81,5 @@ You can no longer continue...
 Your quest ends here...
 The end is nigh...
 You are a hero no more...
+This is the end of your story...
+This is the end for you...
