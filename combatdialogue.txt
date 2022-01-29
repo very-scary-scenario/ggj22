@@ -2,33 +2,62 @@
 A wild <enemy> appeared!
 It's a <enemy>!
 <enemy> jumped out from behind a tree!
+Hark! A <enemy>!
+Look out! It's <enemy>!
+Oh, it's <enemy>.
+Wow, a <enemy>!
+You encounter a <enemy>.
 
 #readying an attack by putting a word on-screen
 <enemy> prepares for attack!
 <enemy> is readying themselves!
 Careful! <enemy> is preparing something big!
+<enemy> is up to something!
+<enemy> psyches themselves up!
+It looks like <enemy> is getting ready for something!
 
 #you typed the word
 You counter-attack with a deft sword-strike!
 You parry the attack and land a sweet back-hander!
 You dodge the attack and return the favour!
+Your attack caught them off guard!
+You sneak up and attack while they're distracted!
 
 #you didn't type the word
 <enemy> lands a hefty blow.
 <enemy> strikes you in a gnarly spot.
 <enemy> attacks you viciously. 
+<enemy> hit you where the sun doesn't shine.
+<enemy> hit you where it hurts.
+<enemy> lands a devastating attack.
+<enemy> probably hit something vital.
 
 #you killed the enemy by typing three words or something
-The <enemy> was defeated!
-You have slain the <enemy>!
-The <enemy> is no more!
+<enemy> was defeated!
+You have slain <enemy>!
+<enemy> is no more!
+You felled <enemy>!
+The evil is defeated!
+<enemy> is done for!
 
 #one of these to follow killing an enemy as a kind of loot table that doesn't do anything
 You gain 5 XP!
+You gain 1 XP!
+You gain no XP!
 You found 3 Gald!
 You found a robe and wizard hat!
+You found the Sword of Kings!
+You found a minor potion of healing!
+You found 3 Junk!
+You found 27 Gold!
+You found 7 Gil!
 
 #you died actually
-You have taken mortal damage. 
-You aren't looking too good.
-You should probably see a doctor.
+You have taken mortal damage...
+You aren't looking too good...
+You should probably see a doctor...
+Your vitals were indeed vital...
+You can no longer continue...
+Your quest ends here...
+The end is nigh...
+You are a hero no more...
