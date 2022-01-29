@@ -1,0 +1,34 @@
+#starting an encounter
+A wild <enemy> appeared!
+It's a <enemy>!
+<enemy> jumped out from behind a tree!
+
+#readying an attack by putting a word on-screen
+<enemy> prepares for attack!
+<enemy> is readying themselves!
+Careful! <enemy> is preparing something big!
+
+#you typed the word
+You counter-attack with a deft sword-strike!
+You parry the attack and land a sweet back-hander!
+You dodge the attack and return the favour!
+
+#you didn't type the word
+<enemy> lands a hefty blow.
+<enemy> strikes you in a gnarly spot.
+<enemy> attacks you viciously. 
+
+#you killed the enemy by typing three words or something
+The <enemy> was defeated!
+You have slain the <enemy>!
+The <enemy> is no more!
+
+#one of these to follow killing an enemy as a kind of loot table that doesn't do anything
+You gain 5 XP!
+You found 3 Gald!
+You found a robe and wizard hat!
+
+#you died actually
+You have taken mortal damage. 
+You aren't looking too good.
+You should probably see a doctor.
