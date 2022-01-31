@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UsefulStuff/Simple2DBitmapFont.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TypingGame/Word.gd" type="Script" id=2]
+
+[node name="TypingWord" type="Node2D"]
+script = ExtResource( 2 )
+word_to_type = "@fifty-two card pick-up"
+
+[node name="background_border" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+color = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BaseWord" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 0 )
+
+[node name="OvertypeWord" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.568627, 0.592157, 0.964706, 1 )
+position = Vector2( 0, 0 )
+text_display = ""

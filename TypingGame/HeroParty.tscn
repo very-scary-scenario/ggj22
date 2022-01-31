@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://TypingGame/Images/hero_sheet.png" type="Texture" id=1]
+[ext_resource path="res://TypingGame/HeroParty.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "WalkDown"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 3 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "WalkLeft"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 4, 5 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "WalkRight"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 6, 7 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "WalkUp"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 7.5, 7 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 7.5, 5 )
+
+[node name="HeroParty" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="HeroASprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+hframes = 2
+vframes = 4
+frame = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HeroASprite"]
+anims/WalkDown = SubResource( 3 )
+anims/WalkLeft = SubResource( 4 )
+anims/WalkRight = SubResource( 5 )
+anims/WalkUp = SubResource( 1 )
+
+[node name="BounceDetector" type="Area2D" parent="HeroASprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HeroASprite/BounceDetector"]
+position = Vector2( 7.5, 25 )
+shape = SubResource( 6 )
+
+[node name="HeroPartyShape" type="CollisionShape2D" parent="."]
+position = Vector2( 7.5, 27 )
+shape = SubResource( 2 )
+
+[connection signal="area_shape_entered" from="HeroASprite/BounceDetector" to="." method="_on_BounceDetector_area_shape_entered"]

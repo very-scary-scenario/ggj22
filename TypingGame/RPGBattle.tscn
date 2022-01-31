@@ -1,0 +1,112 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://TypingGame/RPGBattle.gd" type="Script" id=1]
+[ext_resource path="res://TypingGame/RPGMonsters.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UsefulStuff/Simple2DBitmapFont.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TypingGame/MonsterImages/card_shark.png" type="Texture" id=4]
+[ext_resource path="res://TypingGame/Word.tscn" type="PackedScene" id=5]
+
+[node name="BattleScene" type="Node2D"]
+script = ExtResource( 1 )
+TextFile = "res://TypingGame/combatdialogue.txt"
+
+[node name="MonsterDictionary" parent="." instance=ExtResource( 2 )]
+
+[node name="BattleLayer" type="CanvasLayer" parent="."]
+
+[node name="MonsterNode" type="Node2D" parent="BattleLayer"]
+
+[node name="TypingWord" parent="BattleLayer" instance=ExtResource( 5 )]
+visible = false
+position = Vector2( 4, 9 )
+
+[node name="TimerLabel" type="Node2D" parent="BattleLayer"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="BattleLayer/TimerLabel"]
+margin_left = 2.0
+margin_top = 22.0
+margin_right = 22.0
+margin_bottom = 34.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="BattleLayer/TimerLabel"]
+margin_left = 3.0
+margin_top = 23.0
+margin_right = 21.0
+margin_bottom = 33.0
+color = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimerValue" parent="BattleLayer/TimerLabel" instance=ExtResource( 3 )]
+position = Vector2( 3, 24 )
+
+[node name="TestSprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 4 )
+centered = false
+
+[node name="BattleTextCanvas" type="CanvasLayer" parent="."]
+
+[node name="BattleTextNode" type="Node2D" parent="BattleTextCanvas"]
+visible = false
+
+[node name="borderrect" type="ColorRect" parent="BattleTextCanvas/BattleTextNode"]
+margin_top = 149.0
+margin_right = 200.0
+margin_bottom = 189.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bgrect" type="ColorRect" parent="BattleTextCanvas/BattleTextNode"]
+margin_left = 2.0
+margin_top = 151.0
+margin_right = 198.0
+margin_bottom = 187.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextLine1" parent="BattleTextCanvas/BattleTextNode" instance=ExtResource( 3 )]
+position = Vector2( 4, 156 )
+
+[node name="TextLine2" parent="BattleTextCanvas/BattleTextNode" instance=ExtResource( 3 )]
+position = Vector2( 4, 166 )
+
+[node name="TextLine3" parent="BattleTextCanvas/BattleTextNode" instance=ExtResource( 3 )]
+position = Vector2( 4, 176 )
+
+[node name="TextSplash" type="CanvasLayer" parent="."]
+
+[node name="TextGrouping" type="Node2D" parent="TextSplash"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="TextSplash/TextGrouping"]
+margin_right = 772.0
+margin_bottom = 524.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextLine1" parent="TextSplash/TextGrouping" instance=ExtResource( 3 )]
+position = Vector2( 100, 70 )
+center_just = true
+
+[node name="TextLine2" parent="TextSplash/TextGrouping" instance=ExtResource( 3 )]
+position = Vector2( 100, 90 )
+center_just = true
+
+[node name="TextLine3" parent="TextSplash/TextGrouping" instance=ExtResource( 3 )]
+position = Vector2( 100, 110 )
+center_just = true

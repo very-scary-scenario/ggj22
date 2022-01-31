@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UsefulStuff/Simple2DBitmapFont.gd" type="Script" id=1]
+[ext_resource path="res://UsefulStuff/font/8x8bitmapfont.dds" type="Texture" id=2]
+
+[node name="Simple2DBitmapFont" type="Node2D"]
+position = Vector2( 224, 96 )
+script = ExtResource( 1 )
+font_name = "res://UI/font/8x8bitmapfont.dds"
+font_width = 8
+font_height = 8
+per_line = 16
+test_texture = ExtResource( 2 )
+center_just = false
